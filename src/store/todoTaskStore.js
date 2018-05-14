@@ -1,14 +1,14 @@
-import {autorun, observable} from 'mobx';
+import { autorun, observable } from 'mobx';
 
 class Todo {
 	@observable name
 	@observable id
 	@observable complete
 
-	constructor(value){
+	constructor(value) {
 		this.name = value,
-		this.id =  'ko_'+Date.now(),
-		this.complete = true
+			this.id = 'ko_' + Date.now(),
+			this.complete = false
 	}
 
 }
